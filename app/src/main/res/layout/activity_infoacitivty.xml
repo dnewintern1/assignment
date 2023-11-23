@@ -15,7 +15,7 @@
         android:text="INFO"
         android:fontFamily="sans-serif-condensed"
         android:textColor="@color/white"
-        android:textSize="38dp"
+        android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,11 +23,12 @@
     <Button
         android:id="@+id/button"
         android:layout_width="185dp"
+        android:backgroundTint="#67437e"
         android:layout_height="46dp"
         android:layout_marginTop="144dp"
         android:fontFamily="sans-serif-condensed"
         android:text="PRIVACY POLICY"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -38,50 +39,47 @@
         android:layout_height="46dp"
         android:fontFamily="sans-serif-condensed"
         android:layout_marginTop="220dp"
+        android:backgroundTint="#67437e"
         android:text="RESET GAME"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/materialButton"
-        android:layout_width="56dp"
-        android:layout_height="64dp"
+        android:layout_width="62dp"
+        android:layout_height="72dp"
         android:layout_marginBottom="160dp"
-        android:fontFamily="sans-serif-condensed"
-        android:textSize="14dp"
-        android:text=" "
-        app:cornerRadius="27dp"
+        android:text="SHARE"
+        android:backgroundTint="#67437e"
+        android:textSize="8sp"
+        app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.338"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="182dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="SHARE"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.346"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
+
+
+
+    <Button
         android:id="@+id/moregamesBtn"
-        android:layout_width="56dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="160dp"
-        android:fontFamily="sans-serif-condensed"
-        android:textSize="14sp"
+        android:layout_width="62dp"
+        android:layout_height="72dp"
         android:layout_marginLeft="6dp"
-        app:cornerRadius="27dp"
-        android:text=" "
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#67437e"
+        app:cornerRadius="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="MORE\nGames"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:maxLines="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.653"
@@ -91,16 +89,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
         android:layout_marginBottom="174dp"
+        android:background="@android:color/transparent"
         android:fontFamily="sans-serif-condensed"
         android:text="MORE\nGAMES"
         android:textAlignment="center"
-        android:backgroundTint="#67437e"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         app:layout_constraintVertical_bias="1.0" />
@@ -110,6 +107,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/home"
+        android:contentDescription="@string/home_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
